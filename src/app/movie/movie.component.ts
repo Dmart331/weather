@@ -14,6 +14,7 @@ export class MovieComponent implements OnInit {
 	mv_Director: string = "";
 	mv_Actors: string = "";
 	mv_Plot: string = "";
+	mv_Image: string = "";
 
   constructor(private _sharedService: SharedService ) { }
 
@@ -23,6 +24,7 @@ export class MovieComponent implements OnInit {
   callMovieService(){
   	this._sharedService.findMovie(this.id_movie)
   		.subscribe( listResult => {
+  				console.log("Movie: " , listResult);
   			        this.mv_Title = listResult["Title"];
                 this.mv_Rated = listResult["Rated"];
  
@@ -30,6 +32,7 @@ export class MovieComponent implements OnInit {
                 this.mv_Director = listResult["Director"];
                 this.mv_Actors = listResult["Actors"];
                 this.mv_Plot = listResult["Plot"];
+                this.mv_Image = listResult["Poster"];
   		},
   		error => {
   			console.log("Error");

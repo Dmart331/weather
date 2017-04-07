@@ -17,7 +17,7 @@ export class CurrencyComponent implements OnInit {
   }
 
   callCurrencyService(){
-  	this._sharedService.findMovie(this.id_currency)
+  	this._sharedService.getCurrencyExchangeRate(this.id_currency)
   		.subscribe( listResult => {
   			        this.my_result =  JSON.stringify(listResult);
   		},
