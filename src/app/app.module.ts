@@ -8,6 +8,7 @@ import { MenuComponent } from './menu.component';
 import { WeatherComponent } from './weather/weather.component';
 import { CurrencyComponent } from './currency/currency.component';
 import { MovieComponent } from './movie/movie.component';
+import { CONST_ROUTING } from './app.routing'; 
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MovieComponent } from './movie/movie.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CONST_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
