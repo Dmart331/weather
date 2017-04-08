@@ -28,7 +28,7 @@ export class MovieComponent implements OnInit {
   			        this.mv_Title = listResult["Title"];
                 this.mv_Rated = listResult["Rated"];
  
-                this.mv_Released = listResult["Released"];
+                this.mv_Released = listResult["Year"];
                 this.mv_Director = listResult["Director"];
                 this.mv_Actors = listResult["Actors"];
                 this.mv_Plot = listResult["Plot"];

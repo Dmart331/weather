@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.poster{
+	max-height: 300px;
+	max-width: 150px;
+	margin-left: 35%;
+}
+
+.title{
+	font-size: 3em;
+	font-family: Impact;
+	text-align: center;
+}
+
+.plot{
+	padding-bottom: 20px;
+}

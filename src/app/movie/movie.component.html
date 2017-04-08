@@ -6,14 +6,15 @@
   <h3>Movie Details</h3>
   <br>
   <p class="well lead">
-      <i> Title :</i> {{ this.mv_Title }} <br>
-      <i> Plot :</i> {{ this.mv_Plot }} <br>
-      <i> Actors :</i> {{ this.mv_Actors }} <br>
+      <i class="title"> {{ this.mv_Title }}</i>  <br>
+      <i class="plot"> {{ this.mv_Plot }} </i> <br>
+      <i> {{ this.mv_Actors }}</i>  <br>
       <i> Directed by :</i> {{ this.mv_Director }} <br>
-      <i> Rated :</i> {{ this.mv_Rated }} <br>
+      <i> {{ this.mv_Rated }} </i> <br>
       <i> Release Date :</i> {{ this.mv_Released }} <br>
-      <img src='{{this.mv_Image}}'>
+      <img class="poster" src='{{this.mv_Image}}'>
   </p>
+
   <p class="text-info">Total # of all the service requests including Weather, Movie, and Currency is :
       <span class="badge">{{this._sharedService.totReqsMade}}</span>
   </p>
